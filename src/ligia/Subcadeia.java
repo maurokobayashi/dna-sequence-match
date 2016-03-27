@@ -44,7 +44,7 @@ public class Subcadeia {
 				
 				for (String sequence : dnaSequences) {
 					int distance = distanceBetween(padroes[i], sequence);
-					if(distance <= 2) {
+					if(distance <= maxDistance) {
 						//s=3324 <actgcttct> Distance = 0
 						appendToFile("s="+dnaSequences.indexOf(sequence)+" <"+sequence+ "> Distance = "+distance);
 					}
